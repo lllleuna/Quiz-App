@@ -9,6 +9,16 @@
       "question": "Which shape completes the pattern?",
       "options": ["Circle", "Square", "Triangle", "Hexagon"],
       "answer": "Triangle"
+    },
+    {
+      "question": "Find the odd one out: Apple, Banana, Carrot, Mango.",
+      "options": ["Apple", "Banana", "Carrot", "Mango"],
+      "answer": "Carrot"
+    },
+    {
+      "question": "If all bloops are razzies and all razzies are lazzies, are all bloops definitely lazzies?",
+      "options": ["Yes", "No", "Maybe", "Cannot be determined"],
+      "answer": "Yes"
     }
   ],
   "verbal": [
@@ -16,6 +26,16 @@
       "question": "Select the correct synonym for 'Rapid'.",
       "options": ["Slow", "Quick", "Bright", "Weak"],
       "answer": "Quick"
+    },
+    {
+      "question": "Choose the antonym of 'Generous'.",
+      "options": ["Kind", "Mean", "Selfless", "Giving"],
+      "answer": "Mean"
+    },
+    {
+      "question": "What part of speech is the word 'quickly'?",
+      "options": ["Noun", "Verb", "Adjective", "Adverb"],
+      "answer": "Adverb"
     }
   ],
   "numerical": [
@@ -23,6 +43,16 @@
       "question": "What is 15% of 200?",
       "options": ["25", "30", "35", "40"],
       "answer": "30"
+    },
+    {
+      "question": "What is the next prime number after 7?",
+      "options": ["9", "10", "11", "13"],
+      "answer": "11"
+    },
+    {
+      "question": "If 3x = 12, what is x?",
+      "options": ["2", "3", "4", "6"],
+      "answer": "4"
     }
   ],
   "general": [
@@ -30,6 +60,16 @@
       "question": "Who is the current President of the Philippines?",
       "options": ["Leni Robredo", "Rodrigo Duterte", "Ferdinand Marcos Jr.", "Manny Pacquiao"],
       "answer": "Ferdinand Marcos Jr."
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "options": ["Seoul", "Tokyo", "Beijing", "Bangkok"],
+      "answer": "Tokyo"
+    },
+    {
+      "question": "Which continent is Egypt in?",
+      "options": ["Asia", "Europe", "Africa", "Australia"],
+      "answer": "Africa"
     }
   ],
   "clerical": [
@@ -42,6 +82,21 @@
         "Date modified"
       ],
       "answer": "Last name, then first name"
+    },
+    {
+      "question": "Which of the following is used to keep track of office files?",
+      "options": ["Calendar", "Label Maker", "Filing Cabinet", "Scanner"],
+      "answer": "Filing Cabinet"
+    },
+    {
+      "question": "What is the purpose of a memo?",
+      "options": [
+        "To greet a customer",
+        "To announce information within a company",
+        "To store emails",
+        "To advertise a product"
+      ],
+      "answer": "To announce information within a company"
     }
   ]
 }
