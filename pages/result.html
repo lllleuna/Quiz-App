@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../css/result.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Result</title>
+</head>
+<body>
+  <h1>Results</h1>
+  <div id="summary"></div>
+  
+  <script>
+    const { questions, userAnswers, score } = JSON.parse(localStorage.getItem("quizResult"));
+
+    const summary = document.getElementById("summary");
+    
+    // Calculate score percentage for badge styling
+    const scorePercentage = (score / questions.length) * 100;
+    let scoreClass = 'score-badge';
+    if (scorePercentage < 50) {
+      scoreClass += ' low-score';
+    } else if (scorePercentage < 80) {
+      scoreClass += ' medium-score';
+    }
+    
+    summary.innerHTML = `
+      <h2>Your Score: <span class="${scoreClass}">${score} / ${questions.length}</span></h2>
+      <ul>
+        ${questions
+          .map(
+            (q, i) => `
+          <li>
+            <strong>Q${i + 1}:</strong> ${q.question}<br />
+            <span class="${userAnswers[i] === q.answer ? 'correct-answer' : 'incorrect-answer'}">
+              Your Answer: ${userAnswers[i] || "None"}
+            </span><br />
+            <em>Correct Answer: ${q.answer}</em>
+          </li>
+        `
+          )
+          .join("")}
+      </ul>
+      <div class="action-buttons">
+        <a href="category.html?mode=start" class="action-btn home-btn">Home</a>
+      </div>
+    `;
+  </script>
+</body>
+</html>

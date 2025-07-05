@@ -21,11 +21,19 @@ categoryItems.forEach((item) => {
   });
 });
 
+const urlParams = new URLSearchParams(window.location.search);
+const mode = urlParams.get("mode");
+
 nextButton.addEventListener("click", () => {
   if (selectedCategory) {
     console.log("Selected category:", selectedCategory);
     alert(`Proceeding with ${selectedCategory} category`);
-    // navigation logic here
+    
+    if (mode === "start") {
+      window.location.href = `quiz.html?category=${encodeURIComponent(selectedCategory)}`;
+    } else if (mode === "create") {
+      window.location.href = `create.html?category=${encodeURIComponent(selectedCategory)}`;
+    }
   }
 });
 

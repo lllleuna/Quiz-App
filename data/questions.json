@@ -1,0 +1,47 @@
+{
+  "analytical": [
+    {
+      "question": "What comes next in the sequence: 2, 4, 8, 16, ?",
+      "options": ["18", "24", "32", "20"],
+      "answer": "32"
+    },
+    {
+      "question": "Which shape completes the pattern?",
+      "options": ["Circle", "Square", "Triangle", "Hexagon"],
+      "answer": "Triangle"
+    }
+  ],
+  "verbal": [
+    {
+      "question": "Select the correct synonym for 'Rapid'.",
+      "options": ["Slow", "Quick", "Bright", "Weak"],
+      "answer": "Quick"
+    }
+  ],
+  "numerical": [
+    {
+      "question": "What is 15% of 200?",
+      "options": ["25", "30", "35", "40"],
+      "answer": "30"
+    }
+  ],
+  "general": [
+    {
+      "question": "Who is the current President of the Philippines?",
+      "options": ["Leni Robredo", "Rodrigo Duterte", "Ferdinand Marcos Jr.", "Manny Pacquiao"],
+      "answer": "Ferdinand Marcos Jr."
+    }
+  ],
+  "clerical": [
+    {
+      "question": "Which is the correct way to file documents alphabetically?",
+      "options": [
+        "First name, then last name",
+        "By year then name",
+        "Last name, then first name",
+        "Date modified"
+      ],
+      "answer": "Last name, then first name"
+    }
+  ]
+}
