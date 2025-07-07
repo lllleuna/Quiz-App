@@ -14,7 +14,11 @@ const nextBtn = document.getElementById("nextBtn");
 fetch("../data/questions.json")
   .then((res) => res.json())
   .then((data) => {
-    questions = data[category] || [];
+    const builtIn = data[category] || [];
+    const custom = JSON.parse(localStorage.getItem("customQuizzes") || "{}")[category] || [];
+
+    // Combine default + custom questions
+    questions = [...builtIn, ...custom];
 
     if (questions.length === 0) {
       alert("No questions found for this category.");
@@ -24,6 +28,7 @@ fetch("../data/questions.json")
     userAnswers = Array(questions.length).fill(null);
     renderQuestion();
   });
+
 
 function renderStatusBar() {
   statusBar.innerHTML = questions

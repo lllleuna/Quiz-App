@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Quiz</title>
+  <link rel="stylesheet" href="../css/create.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <a href="category.html?mode=create" class="go-back">← Go Back</a>
+      <select id="categorySelect" class="category-dropdown">
+        <option value="analytical">Analytical</option>
+        <option value="verbal">Verbal</option>
+        <option value="numerical">Numerical</option>
+        <option value="general">General</option>
+        <option value="clerical">Clerical</option>
+      </select>
+    </div>
+
+    <section class="create-section">
+      <h2>Create a Question</h2>
+
+      <textarea id="questionInput" placeholder="Add question/statement"></textarea>
+
+      <div id="optionsContainer">
+      </div>
+
+      <button id="addOptionBtn">+ Add Option</button>
+      <button id="addQuestionBtn">Add Question</button>
+    </section>
+
+    <section class="added-questions">
+      <h2>Added Questions</h2>
+      <div id="questionList">
+        <div class="empty-state">
+          No questions added yet. Create your first question above!
+        </div>
+      </div>
+    </section>
+
+    <button id="submitBtn" class="submit-btn">Submit All</button>
+  </div>
+
+<script src="../js/create.js"></script>
+</body>
+</html>
