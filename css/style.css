@@ -60,7 +60,7 @@ section.welcome.slide-up {
 }
 
 .welcome-content p {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin-bottom: 2.5rem;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 300;
@@ -261,7 +261,7 @@ section.mode.show {
   }
 
   .welcome-content p {
-    font-size: 1.1rem;
+    font-size: .7rem;
     padding: 0 1rem;
   }
 
